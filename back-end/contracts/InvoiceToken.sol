@@ -47,7 +47,6 @@ contract InvoiceToken is ERC721 {
         invoice.invoiceToEntityABN = invoiceToEntityABN;
         invoice.invoiceToWalletAddress = invoiceToWalletAddress;
         invoice.documentHash = documentHash;
-
         return tokenId;
     }
 
