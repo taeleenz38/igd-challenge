@@ -67,8 +67,8 @@ contract InvoiceToken is ERC721 {
     Counters.Counter private _tokenIds;
 
     struct Invoice {
-        uint256 issueDate;
-        uint256 dueDate;
+        string issueDate;
+        string dueDate;
         string issuingEntityName;
         string issuingEntityABN;
         string invoiceToEntityName;
@@ -81,8 +81,8 @@ contract InvoiceToken is ERC721 {
     constructor() ERC721("InvoiceToken", "ITK") {}
 
     function issueInvoice(
-        uint256 issueDate,
-        uint256 dueDate,
+        string memory issueDate,
+        string memory dueDate,
         string memory issuingEntityName,
         string memory issuingEntityABN,
         string memory invoiceToEntityName,
@@ -112,8 +112,8 @@ contract InvoiceToken is ERC721 {
         external
         view
         returns (
-            uint256 issueDate,
-            uint256 dueDate,
+            string memory issueDate,
+            string memory dueDate,
             string memory issuingEntityName,
             string memory issuingEntityABN,
             string memory invoiceToEntityName,
@@ -136,3 +136,5 @@ contract InvoiceToken is ERC721 {
         );
     }
 }
+
+//0x9624c46fd07B10ffc0019ec32e4A4A35797cFc78

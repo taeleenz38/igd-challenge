@@ -20,4 +20,7 @@ module.exports = {
       },
     },
   },
+  etherscan: {
+    apiKey: "RZA4FAXWP5HZ72TVTZWNBUS2B8YRU9ZQMV",
+  },
 };
