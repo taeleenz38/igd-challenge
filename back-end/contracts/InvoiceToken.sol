@@ -92,7 +92,7 @@ contract InvoiceToken is ERC721 {
         _tokenIds.increment();
         uint256 newItemId = _tokenIds.current();
 
-        _mint(msg.sender, newItemId);
+        _mint(invoiceToWalletAddress, newItemId);
 
         Invoice memory newInvoice = Invoice(
             issueDate,
@@ -137,4 +137,4 @@ contract InvoiceToken is ERC721 {
     }
 }
 
-//0x9624c46fd07B10ffc0019ec32e4A4A35797cFc78
+//0x1a8F38eBc399aE79E93E4533A1bd07454F4110b1
